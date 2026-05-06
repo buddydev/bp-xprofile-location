@@ -74,7 +74,6 @@ For more information about this plugin, please visit [BP xProfile Location](http
 
 
 
-
 == Frequently Asked Questions ==
 
 = Do I need a Google Maps API Key? =
@@ -102,7 +101,6 @@ If you selected the "Save Geocode" option when creating the profile field and a 
 	For group maps, please see: [BP Maps for Groups](https://www.philopress.com/products/bp-maps-for-groups "BP Maps for Groups")
 
 
-
 == Screenshots ==
 1. The Edit screen on a member profile with Address Auto-Complete
 2. Creating a Profile Field of Type > Location
@@ -110,6 +108,11 @@ If you selected the "Save Geocode" option when creating the profile field and a 
 
 
 == Changelog ==
+= 5.0.0 =
+* Refactored
+* Tested with BuddyPress 14.4.0
+* Text domain changed to 'bp-xprofile-location'
+* Some hook names changed
 
 = 4.9 =
 * fixed bug related BuddyPress registration
@@ -186,7 +189,6 @@ If you selected the "Save Geocode" option when creating the profile field and a 
 
 
 == Upgrade Notice ==
-
 = 4.9 =
 * fixed bug related BuddyPress registration
 
