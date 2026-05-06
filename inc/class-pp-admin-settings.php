@@ -36,7 +36,7 @@ class PP_Location_Admin_Settings {
 	public static function register_bp_settings(): void {
 		add_settings_field(
 			'pp_gapikey',
-			__( 'Google Maps API key', 'bp-profile-location' ),
+			__( 'Google Maps API key', 'bp-xprofile-location' ),
 			array( __CLASS__, 'render_bp_api_key_field' ),
 			'buddypress',
 			'bp_xprofile'
@@ -112,8 +112,8 @@ class PP_Location_Admin_Settings {
 			<h2 class="nav-tab-wrapper"><?php bp_core_admin_tabs( 'PhiloPress' ); ?></h2>
 
 			<div class="bp-admin-card section-bp_main">
-				<h2><?php esc_html_e( 'PhiloPress Settings', 'bp-profile-location' ); ?></h2>
-				<h3><?php esc_html_e( 'Google Maps API Key', 'bp-profile-location' ); ?></h3>
+				<h2><?php esc_html_e( 'PhiloPress Settings', 'bp-xprofile-location' ); ?></h2>
+				<h3><?php esc_html_e( 'Google Maps API Key', 'bp-xprofile-location' ); ?></h3>
 
 				<form action="<?php echo esc_url( admin_url( 'admin.php?page=philopress' ) ); ?>" method="post">
 					<?php wp_nonce_field( 'pp_settings_save', 'pp_settings_nonce' ); ?>
@@ -124,7 +124,7 @@ class PP_Location_Admin_Settings {
 						<input type="submit"
 						       name="pp_settings_submit"
 						       class="button-primary"
-						       value="<?php esc_attr_e( 'Save PhiloPress Settings', 'bp-profile-location' ); ?>" />
+						       value="<?php esc_attr_e( 'Save PhiloPress Settings', 'bp-xprofile-location' ); ?>" />
 					</p>
 				</form>
 			</div>
@@ -146,7 +146,7 @@ class PP_Location_Admin_Settings {
 		check_admin_referer( 'pp_settings_save', 'pp_settings_nonce' );
 
 		if ( ! current_user_can( 'manage_options' ) ) {
-			wp_die( esc_html__( 'You do not have permission to perform this action.', 'bp-profile-location' ) );
+			wp_die( esc_html__( 'You do not have permission to perform this action.', 'bp-xprofile-location' ) );
 		}
 
 		if ( ! empty( $_POST['pp_gapikey'] ) ) {
@@ -154,7 +154,7 @@ class PP_Location_Admin_Settings {
 			bp_update_option( 'pp_gapikey', $api_key );
 			?>
 			<div class="notice notice-success is-dismissible">
-				<p><strong><?php esc_html_e( 'PhiloPress Settings saved.', 'bp-profile-location' ); ?></strong></p>
+				<p><strong><?php esc_html_e( 'PhiloPress Settings saved.', 'bp-xprofile-location' ); ?></strong></p>
 			</div>
 			<?php
 		} else {
@@ -162,7 +162,7 @@ class PP_Location_Admin_Settings {
 			bp_update_option( 'pp_gapikey', '' );
 			?>
 			<div class="notice notice-warning is-dismissible">
-				<p><?php esc_html_e( 'Google Maps API key cleared.', 'bp-profile-location' ); ?></p>
+				<p><?php esc_html_e( 'Google Maps API key cleared.', 'bp-xprofile-location' ); ?></p>
 			</div>
 			<?php
 		}
@@ -189,13 +189,13 @@ class PP_Location_Admin_Settings {
 		       size="50"
 		       id="pp_gapikey"
 		       name="pp_gapikey"
-		       placeholder="<?php esc_attr_e( 'Paste Your Google Maps API Key Here', 'bp-profile-location' ); ?>"
+		       placeholder="<?php esc_attr_e( 'Paste Your Google Maps API Key Here', 'bp-xprofile-location' ); ?>"
 		       value="<?php echo esc_attr( $api_key ); ?>" />
 		<p class="description">
-			<?php esc_html_e( 'A key is required. If you do not have one, follow these instructions:', 'bp-profile-location' ); ?>
+			<?php esc_html_e( 'A key is required. If you do not have one, follow these instructions:', 'bp-xprofile-location' ); ?>
 			<br>
-			<a href="https://www.philopress.com/google-maps-api-key/" target="_blank" rel="noopener">
-				<?php esc_html_e( 'Get a Google Maps API Key', 'bp-profile-location' ); ?>
+			<a href="https://buddydev.com/docs/general/how-to-create-google-map-api-key/" target="_blank" rel="noopener">
+				<?php esc_html_e( 'Get a Google Maps API Key', 'bp-xprofile-location' ); ?>
 			</a>
 		</p>
 		<?php

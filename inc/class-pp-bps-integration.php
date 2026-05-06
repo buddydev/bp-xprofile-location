@@ -19,9 +19,9 @@
 
 defined( 'ABSPATH' ) || exit;
 
-if ( ! class_exists( 'PP_Location_Bps_Integration' ) ) :
+if ( ! class_exists( 'PP_Location_BPS_Integration' ) ) :
 
-class PP_Location_Bps_Integration {
+class PP_Location_BPS_Integration {
 
 	/**
 	 * Registers all BPS / BuddyBoss profile search hooks.

@@ -1,0 +1,116 @@
+# Copyright (C) 2026 PhiloPress
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: BP xProfile Location 5.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bp-xprofile-location\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-05-06T13:04:54+05:30\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: bp-xprofile-location\n"
+
+#. Plugin Name of the plugin
+msgid "BP xProfile Location"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://www.buddydev.com/plugins/bp-xprofile-location"
+msgstr ""
+
+#. Description of the plugin
+msgid "Adds an xProfile Location field type that uses the Google Places API to complete and validate addresses."
+msgstr ""
+
+#. Author of the plugin
+msgid "PhiloPress"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.philopress.com/"
+msgstr ""
+
+#: inc/class-pp-admin-settings.php:39
+msgid "Google Maps API key"
+msgstr ""
+
+#: inc/class-pp-admin-settings.php:115
+msgid "PhiloPress Settings"
+msgstr ""
+
+#: inc/class-pp-admin-settings.php:116
+msgid "Google Maps API Key"
+msgstr ""
+
+#: inc/class-pp-admin-settings.php:127
+msgid "Save PhiloPress Settings"
+msgstr ""
+
+#: inc/class-pp-admin-settings.php:149
+msgid "You do not have permission to perform this action."
+msgstr ""
+
+#: inc/class-pp-admin-settings.php:157
+msgid "PhiloPress Settings saved."
+msgstr ""
+
+#: inc/class-pp-admin-settings.php:165
+msgid "Google Maps API key cleared."
+msgstr ""
+
+#: inc/class-pp-admin-settings.php:192
+msgid "Paste Your Google Maps API Key Here"
+msgstr ""
+
+#: inc/class-pp-admin-settings.php:195
+msgid "A key is required. If you do not have one, follow these instructions:"
+msgstr ""
+
+#: inc/class-pp-admin-settings.php:198
+msgid "Get a Google Maps API Key"
+msgstr ""
+
+#: inc/class-pp-field-type.php:21
+msgctxt "xprofile field type"
+msgid "Location"
+msgstr ""
+
+#: inc/class-pp-field-type.php:81
+msgid "Start typing an address. Then make a selection..."
+msgstr ""
+
+#: inc/class-pp-field-type.php:148
+msgid "Do you want this field to save a geocode for each member?"
+msgstr ""
+
+#: inc/class-pp-field-type.php:152
+msgid "Yes"
+msgstr ""
+
+#: inc/class-pp-field-type.php:153
+msgid "No"
+msgstr ""
+
+#: inc/class-pp-field-type.php:156
+msgid "The geocode will be saved in the usermeta table in this format:"
+msgstr ""
+
+#: inc/class-pp-field-type.php:158
+msgid "meta_key = geocode_[field id]"
+msgstr ""
+
+#: inc/class-pp-field-type.php:159
+msgid "meta_value = [latitude],[longitude]"
+msgstr ""
+
+#: inc/class-pp-field-type.php:162
+msgid "You can then use the geocode in your mapping solution."
+msgstr ""
+
+#: inc/class-pp-field-type.php:168
+msgid "Or use a solution like <a href=\"%s\">BP Maps for Members</a>."
+msgstr ""

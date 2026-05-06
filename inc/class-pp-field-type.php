@@ -18,7 +18,7 @@ class PP_Location_Field_Type extends BP_XProfile_Field_Type {
 		parent::__construct();
 
 		$this->category           = _x( 'Single Fields', 'xprofile field type category', 'buddypress' );
-		$this->name               = _x( 'Location', 'xprofile field type', 'bp-profile-location' );
+		$this->name               = _x( 'Location', 'xprofile field type', 'bp-xprofile-location' );
 		$this->accepts_null_value = true;
 		$this->supports_options   = true;
 
@@ -78,7 +78,7 @@ class PP_Location_Field_Type extends BP_XProfile_Field_Type {
 				array(
 					'type'                  => 'text',
 					'value'                 => $value,
-					'placeholder'           => __( 'Start typing an address. Then make a selection...', 'bp-profile-location' ),
+					'placeholder'           => __( 'Start typing an address. Then make a selection...', 'bp-xprofile-location' ),
 					'class'                 => 'form-control',
 					'autocomplete'          => 'off',
 					// Data attributes drive assets/js/location-field.js.
@@ -145,27 +145,27 @@ class PP_Location_Field_Type extends BP_XProfile_Field_Type {
 		     class="postbox bp-options-box"
 		     style="<?php echo esc_attr( $class ); ?> margin-top: 15px;">
 			<div class="inside">
-				<h4><?php esc_html_e( 'Do you want this field to save a geocode for each member?', 'bp-profile-location' ); ?></h4>
+				<h4><?php esc_html_e( 'Do you want this field to save a geocode for each member?', 'bp-xprofile-location' ); ?></h4>
 				<p>
 					<select name="<?php echo esc_attr( "{$type}_option[1]" ); ?>"
 					        id="<?php echo esc_attr( "{$type}_option1" ); ?>">
-						<option value="1"<?php selected( 1, (int) $geocode_option ); ?>><?php esc_html_e( 'Yes', 'bp-profile-location' ); ?></option>
-						<option value="2"<?php selected( 2, (int) $geocode_option ); ?>><?php esc_html_e( 'No', 'bp-profile-location' ); ?></option>
+						<option value="1"<?php selected( 1, (int) $geocode_option ); ?>><?php esc_html_e( 'Yes', 'bp-xprofile-location' ); ?></option>
+						<option value="2"<?php selected( 2, (int) $geocode_option ); ?>><?php esc_html_e( 'No', 'bp-xprofile-location' ); ?></option>
 					</select>
 				</p>
-				<p><?php esc_html_e( 'The geocode will be saved in the usermeta table in this format:', 'bp-profile-location' ); ?></p>
+				<p><?php esc_html_e( 'The geocode will be saved in the usermeta table in this format:', 'bp-xprofile-location' ); ?></p>
 				<ul>
-					<li><?php esc_html_e( 'meta_key = geocode_[field id]', 'bp-profile-location' ); ?></li>
-					<li><?php esc_html_e( 'meta_value = [latitude],[longitude]', 'bp-profile-location' ); ?></li>
+					<li><?php esc_html_e( 'meta_key = geocode_[field id]', 'bp-xprofile-location' ); ?></li>
+					<li><?php esc_html_e( 'meta_value = [latitude],[longitude]', 'bp-xprofile-location' ); ?></li>
 				</ul>
 				<p>
-					<?php esc_html_e( 'You can then use the geocode in your mapping solution.', 'bp-profile-location' ); ?>
+					<?php esc_html_e( 'You can then use the geocode in your mapping solution.', 'bp-xprofile-location' ); ?>
 					<br>
 					<?php
 					printf(
 						/* translators: %s = product link */
 						wp_kses(
-							__( 'Or use a solution like <a href="%s">BP Maps for Members</a>.', 'bp-profile-location' ),
+							__( 'Or use a solution like <a href="%s">BP Maps for Members</a>.', 'bp-xprofile-location' ),
 							[ 'a' => [ 'href' => [] ] ]
 						),
 						'https://www.philopress.com/products/bp-maps-for-members/'

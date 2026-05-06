@@ -1,13 +1,13 @@
 === BP xProfile Location ===
-Contributors: shanebp
+Contributors: shanebp, buddydev, sbrajesh
 Donate link: https://www.philopress.com/donate/
 Tags: buddypress, location, address, geocode, map
 Author: PhiloPress
 Author URI: https://philopress.com/
-Plugin URI: https://www.philopress.com/products/bp-xprofile-location/
-Requires at least: 4.0
+Plugin URI: https://buddydev.com/plugins/bp-xprofile-location/
+Requires at least: 6.0
 Tested up to: 6.6
-Stable tag: 4.9
+Stable tag: 5.0.0
 License: GPLv2 or later
 
 == Short Description ==
@@ -31,7 +31,7 @@ Or you may be interested in this **Member Map** solution: [BP Maps for Members](
 For **Group Maps**, please see: [BP Maps for Groups](https://www.philopress.com/products/bp-maps-for-groups "BP Maps for Groups")
 
 
-For more information about this plugin, please visit [BP xProfile Location](https://www.philopress.com/products/bp-xprofile-location/ "BP xProfile Location")
+For more information about this plugin, please visit [BP xProfile Location](https://buddydev.com/plugins/bp-xprofile-location/ "BP xProfile Location")
 
 == Description ==
 
@@ -54,7 +54,7 @@ Or you may be interested in this **Member Map** solution: [BP Maps for Members](
 For **Group Maps**, please see: [BP Maps for Groups](https://www.philopress.com/products/bp-maps-for-groups "BP Maps for Groups")
 
 
-For more information about this plugin, please visit [BP xProfile Location](https://www.philopress.com/products/bp-xprofile-location/ "BP xProfile Location")
+For more information about this plugin, please visit [BP xProfile Location](https://buddydev.com/plugins/bp-xprofile-location/ "BP xProfile Location")
 
 == Installation ==
 

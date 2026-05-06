@@ -40,7 +40,7 @@ class PP_Location_Plugin {
 	 */
 	public function load_translations(): void {
 		load_plugin_textdomain(
-			'bp-profile-location',
+			'bp-xprofile-location',
 			false,
 			dirname( PP_LOC_FILE ) . '/languages'
 		);
@@ -68,9 +68,9 @@ class PP_Location_Plugin {
 		new PP_Location_Field_Handler();
 
 		// BPS integration: only load when BP Profile Search 5.x is active.
-		if ( defined( 'BPS_VERSION' ) && version_compare( BPS_VERSION, '5.0', '>=' ) ) {
+		if ( defined( 'BPS_VERSION' ) || $this->is_buddyboss() ) {
 			require_once PP_LOC_DIR . 'inc/class-pp-bps-integration.php';
-			PP_Location_Bps_Integration::init();
+			PP_Location_BPS_Integration::init();
 		}
 	}
 
