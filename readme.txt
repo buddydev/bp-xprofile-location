@@ -7,7 +7,7 @@ Author URI: https://philopress.com/
 Plugin URI: https://buddydev.com/plugins/bp-xprofile-location/
 Requires at least: 6.0
 Tested up to: 6.6
-Stable tag: 5.0.0
+Stable tag: 5.0.1
 License: GPLv2 or later
 
 == Short Description ==
@@ -73,7 +73,6 @@ For more information about this plugin, please visit [BP xProfile Location](http
  - Go to wp-admin > > BuddyBoss > Profiles > Profile Fields > Add New Field and Create a profile field of Type = Location.
 
 
-
 == Frequently Asked Questions ==
 
 = Do I need a Google Maps API Key? =
@@ -108,11 +107,15 @@ If you selected the "Save Geocode" option when creating the profile field and a 
 
 
 == Changelog ==
+= 5.0.1 =
+* Fixes BuddyBoss compatibility
+
 = 5.0.0 =
 * Refactored
 * Tested with BuddyPress 14.4.0
 * Text domain changed to 'bp-xprofile-location'
 * Some hook names changed
+* If you are using any dependent plugin, immediately update the dependent plugins. 5.0.0 is a breaking release.
 
 = 4.9 =
 * fixed bug related BuddyPress registration

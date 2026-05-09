@@ -4,3 +4,4 @@
 .gitignore
 .travis.yml
 circle.yml
+changelog.md

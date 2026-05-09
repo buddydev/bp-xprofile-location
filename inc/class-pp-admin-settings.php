@@ -20,7 +20,7 @@ class PP_Location_Admin_Settings {
 	public static function init(): void {
 		if ( bp_xprofile_location()->is_buddyboss() ) {
 			add_filter( 'bp_core_get_admin_tabs', array( __CLASS__, 'add_buddyboss_tab' ) );
-			add_action( 'bp_init', array( __CLASS__, 'register_buddyboss_menu' ) );
+			self:: register_buddyboss_menu();
 		} else {
 			add_action( 'bp_register_admin_settings', array( __CLASS__, 'register_bp_settings' ) );
 		}
@@ -84,9 +84,10 @@ class PP_Location_Admin_Settings {
 	 * Registers the PhiloPress submenu page under BuddyBoss Platform.
 	 */
 	public static function register_buddyboss_menu(): void {
+
 		add_action(
 			bp_core_admin_hook(),
-			static function (): void {
+			function (): void {
 				add_submenu_page(
 					'buddyboss-platform',
 					'PhiloPress',
@@ -95,7 +96,7 @@ class PP_Location_Admin_Settings {
 					'philopress',
 					array( PP_Location_Admin_Settings::class, 'render_buddyboss_page' )
 				);
-			}
+			}, 200
 		);
 	}
 
