@@ -149,7 +149,7 @@ class PP_Location_BPS_Integration {
 	 *
 	 * @return array Matching user IDs.
 	 */
-	private static function members_within_radius(
+	public static function members_within_radius(
 		float $center_lat,
 		float $center_lng,
 		int $radius,

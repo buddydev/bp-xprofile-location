@@ -62,6 +62,7 @@ class PP_Location_Plugin {
 	 * Loads field type, field handler, and optional BPS integration.
 	 */
 	public function load_components(): void {
+		$this->define_constants();
 		require_once PP_LOC_DIR . 'inc/class-pp-field-type.php';
 		require_once PP_LOC_DIR . 'inc/class-pp-field-handler.php';
 
@@ -71,6 +72,31 @@ class PP_Location_Plugin {
 		if ( defined( 'BPS_VERSION' ) || $this->is_buddyboss() ) {
 			require_once PP_LOC_DIR . 'inc/class-pp-bps-integration.php';
 			PP_Location_BPS_Integration::init();
+		}
+	}
+
+	/**
+	 * Defines constants for dependent plugin backward compatibility(member maps)
+	 */
+	private function define_constants(): void {
+		$bp = buddypress();
+
+		if ( ! defined( 'PP_BOSS' ) ) {
+			if ( ! empty( $bp->buddyboss ) ) {
+				define( 'PP_BOSS', true );
+			} else {
+				define( 'PP_BOSS', false );
+			}
+		}
+
+		if ( defined( 'PP_BPS' ) ) {
+			return;
+		}
+
+		if ( defined( 'BPS_VERSION' ) && version_compare( BPS_VERSION, '4.9.8', '>' ) ) {
+			define( 'PP_BPS', true );
+		} else {
+			define( 'PP_BPS', false );
 		}
 	}
 

@@ -6,7 +6,7 @@ Author: PhiloPress
 Author URI: https://philopress.com/
 Plugin URI: https://buddydev.com/plugins/bp-xprofile-location/
 Requires at least: 6.0
-Tested up to: 6.6
+Tested up to: 6.9.4
 Stable tag: 5.0.1
 License: GPLv2 or later
 
