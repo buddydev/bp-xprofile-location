@@ -6,8 +6,8 @@ Author: PhiloPress
 Author URI: https://philopress.com/
 Plugin URI: https://buddydev.com/plugins/bp-xprofile-location/
 Requires at least: 6.0
-Tested up to: 6.9.4
-Stable tag: 5.0.1
+Tested up to: 7.0
+Stable tag: 5.0.2
 License: GPLv2 or later
 
 == Short Description ==
@@ -107,6 +107,9 @@ If you selected the "Save Geocode" option when creating the profile field and a 
 
 
 == Changelog ==
+= 5.0.2 =
+* Adding back constants and functions to ensure dependent plugins keep working.
+
 = 5.0.1 =
 * Fixes BuddyBoss compatibility
 

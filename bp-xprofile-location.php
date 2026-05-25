@@ -3,7 +3,7 @@
  * Plugin Name: BP xProfile Location
  * Plugin URI:  https://www.buddydev.com/plugins/bp-xprofile-location
  * Description: Adds an xProfile Location field type that uses the Google Places API to complete and validate addresses.
- * Version:     5.0.1
+ * Version:     5.0.2
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * Author:      PhiloPress
@@ -17,7 +17,7 @@
 // Do not allow direct access over web.
 defined( 'ABSPATH' ) || exit;
 
-define( 'PP_LOC_VERSION', '5.0.1' );
+define( 'PP_LOC_VERSION', '5.0.2' );
 define( 'PP_LOC_FILE',    __FILE__ );
 define( 'PP_LOC_DIR',     plugin_dir_path( __FILE__ ) );
 define( 'PP_LOC_URL',     plugin_dir_url( __FILE__ ) );
